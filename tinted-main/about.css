@@ -1,0 +1,289 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+* { font-family: 'Roboto', Sans-serif;  /*font-weight: 400;*/}
+:root {
+--main-color: #F7CD37;
+--emphasis-color: #4CCC90;
+--general-black: #303030;
+--emphasis-hover-color: #00BD64;
+--emphasis-pressed-color: #00703B;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 84px;
+	background-color: var(--black-nav);
+	
+}
+header a {
+color: var(--general-black);
+text-decoration: none;
+}
+
+a {
+color: var(--general-black);
+text-decoration: none;
+}
+.wrapper-menu {
+display: flex;
+height: 84px;
+justify-content: center;
+align-items: center;
+}
+.logo {
+font-size: 36px;
+font-weight: 100;
+}
+
+nav {
+/*width: 1128px;*/
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.nav-menu-wrapper a:hover {
+color: var(--main-color);
+}
+.nav-menu-wrapper a:not(:last-child) {
+margin-right: 56px;
+/*font-size: 18px;*/
+}
+
+.hero {
+background-image: url("images/gallery-hero-img.png");
+background-size: cover;
+background-position: center;
+}
+
+.text-wrapper-lg {
+	margin: 0 auto;
+	padding: 180px 0 97px;
+	width: 1128px;
+	text-align: center;
+	color: white;
+}
+.heading-text {
+	font-size: 70px;
+}
+.text-wrapper-lg h1{
+	margin-bottom: 32px;
+}
+
+/*콘텐츠B: 개요(아이콘+글자)*/
+.conB .container{
+	padding-top: 80px;
+	padding-bottom: 20px;
+}
+.conB .text{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+.conB h2{
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.conB p{
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 1.8;
+	opacity: 0.8;
+}
+.conB a{
+	color: #5D9AB2;
+	text-decoration: none;
+}
+.conB a:hover{
+	text-decoration: underline;
+}
+.conB .icon{
+	display: inline-block;
+	margin-bottom: 20px;
+	font-size: 40px;
+	width: 2em;
+	line-height: 2em;
+	border-radius: 50%;
+	text-align: center;
+	background-color: #ddd;
+	color: #fff;
+}
+@media(min-width: 768px){
+	.conB .container{
+		display: flex;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.conB .text{
+		flex: 1;
+	}
+}
+
+/*콘텐츠C: 개요(이미지+글자)*/
+.conC{
+	background-color: #5D9AB2;
+	background-color: var(--main-color);
+	color: #fff;
+	color: var(--text-bright-color);
+}
+.conC .text{
+	padding: 20px;
+}
+.conC h2{
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.conC p{
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 1.8;
+	opacity: 0.8;
+}
+.conC a{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 30px;
+	border: solid 3px currentColor;
+	border-radius: 6px;
+	background-color: #5D9AB2;
+	background-color: var(--main-color);
+	color: #fff;
+	color: var(--text-bright-color);
+	font-size: 14px;
+	text-decoration: none;
+}
+.conC a:hover{
+	background-image: linear-gradient(
+		rgba(255,255,255,0.2), rgba(255,255,255,0.2)
+		);
+}
+.conC .photo{
+	min-height: 548px;
+	background-image: url(https://deemo.com/deemo2/images/screenshots/DEEMO-2_01.jpg);
+	background-position: center;
+	background-size: cover;
+}
+@media(min-width: 768px){
+	.conC .container{
+		display: flex;
+		max-width: 1000px;
+		max-width: var(--large-width);
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.conC .photo{
+		flex: 3;
+	}
+	.conC .text{
+		flex: 2;
+		padding: 50px;
+	}
+}
+
+/*콘텐츠D: 개요(이미지+글자: 반대로 배치하기)*/
+.conD{
+	background-color: #BF6A7A;
+}
+.conD .container{
+	padding-top: 2px;
+}
+
+.conD .text{
+	padding: 20px;
+}
+.conD h2{
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.conD p{
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 1.8;
+	opacity: 0.8;
+}
+.conD a{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 30px;
+	box-shadow: 0 0 0 1px #888;
+	border: solid 3px currentColor;
+	border-radius: 6px;
+	background-color: #BF6A7A;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+}
+.conD a:hover{
+	background-image: linear-gradient(
+		rgba(255,255,255,0.2), rgba(255,255,255,0.2)
+		);
+}
+.conD .photo{
+	min-height: 548px;
+	background-image: url(https://deemo.com/deemo2/images/screenshots/DEEMO-2_03.jpg);
+	background-position: center;
+	background-size: cover;
+}
+@media(min-width: 768px){
+	.conD .container{
+		display: flex;
+		flex-direction: row-reverse;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.conD .photo{
+		flex: 0 0 400px;
+	}
+	.conD .text{
+		flex: 1;
+		padding: 58px;
+	}
+}
+
+/*footer*/
+footer {
+background-color: #F6F6F6;
+}
+.footer-space-small {
+height: 40px;
+}
+footer hr {
+display: inline-block;
+width: 100vw;
+height: 1px;
+background-color: var(--general-black);
+margin: 40px 0;
+}
+.footer-text-wrapper {
+width: 1128px;
+margin: 0 auto;
+padding-bottom: 76px;
+opacity: 0.8;
+
+}
+.footer-logo {
+display: inline-block;
+font-size: 36px;
+font-weight: 100;
+margin-right: 24px;
+}
+.footer-text-wrapper p {
+display: inline-block;
+font-size: 14px;
+font-weight: 400;
+}

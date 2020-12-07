@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    * { font-family: 'Spoqa Han Sans', 'Sans-serif'; }
+    :root {
+        --main-color: #F7CD37;
+        --emphasis-color: #4CCC90;
+        --general-black: #303030;
+        --emphasis-hover-color: rgba(26, 255, 0, 0.3);
+        --emphasis-pressed-color: #00703B;
+        --black-nav: #1f1f1f9d;
+        --gray-color: #ddd;
+    }
+    a {
+        color: var(--general-black);
+        text-decoration: none;
+    }
+    header {
+        width: 100vw;
+        background-color: var(--black-nav);
+        position: absolute;
+        z-index: 2;
+    }
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1128px;
+        margin: 0 auto;
+    }
+    .logo {
+        font-size: 35px;
+        font-weight: 100;
+        line-height: 84px;
+        color: white;
+    }
+    nav {
+        display: block;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+    nav a {
+        display: inline-block;
+        margin: 0 16px;
+        padding: 16px;
+        font-size: 18px;
+        color: white;
+    }
+    nav ul li:last-child {
+        font-weight: 700;
+    }
+    nav a:hover {
+        color: var(--main-color);
+        background-color: rgba(0,0,0,0.4);
+    }
+    .ham-btn {
+        display: none;
+    }
+    @media (min-width: 768px) {
+        nav ul {
+            display: flex;
+            /* justify-content: space-between;
+            align-items: center;
+            list-style: none; */
+        }
+        nav {
+            display: block !important;
+        }
+    }
+    @media (max-width: 767px) {
+        header .mobile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 12px;
+        }
+        .nav-wrapper {
+            display: block;
+            background-color: var(--black-nav);
+        }
+        nav {
+            display: none;
+        }
+        nav ul {
+            display: block;
+        }
+        nav ul a {
+            display: block;
+        }
+        .ham-btn {
+            display: inline-block;
+            font-size: 20px;
+            background: none;
+            outline: none;
+            border: none;
+        }
+        .ham-btn:hover {
+            opacity: 0.3;
+        }
+        .hamburger {
+            stroke: white;
+            width: 36px;
+            height: 36px;
+        }
+    }
+    .hero {
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("images/gallery-hero-img.png");
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+    }
+    .text-wrapper-lg {
+        margin: 0 auto;
+        padding: 180px 0 97px;
+        max-width: 1128px;
+        text-align: center;
+        color: white;
+    }
+    .heading-text {
+        font-size: 70px;
+    }
+    .text-wrapper-lg h1 {
+        margin-bottom: 32px;
+    }
+    /* catagory-start */
+    
+    .gallery-section {
+        margin-top: 120px;
+        text-align: center;
+    }
+    .gallery-container {
+        display: inline-block;
+    }
+    @media (max-width: 767px) {
+        .gallery-container {
+            display: inline-block;
+            margin: 0 auto;
+            width: 308px;
+            column-width: 100px;
+            column-gap: 4px;
+        }
+        .gallery-img {
+            display: inline-block;
+            margin-bottom: 2px;
+            width: 100px;
+            height: 100px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        
+        .gallery-img:nth-child(3n+1) {
+            height: 150px;
+        }
+        .gallery-img.photo1{
+            background-image: url("images/full-img1.jpg")
+        }
+        .gallery-img.photo2{
+            background-image: url("images/full-img2.jpg")
+        }
+        .gallery-img.photo3{
+            background-image: url("images/full-img3.jpg")
+        }
+        .gallery-img.photo4{
+            background-image: url("images/full-img4.jpg")
+        }
+        .gallery-img.photo5{
+            background-image: url("images/full-img5.jpg")
+        }
+        .gallery-img.photo6{
+            background-image: url("images/full-img6.jpg")
+        }
+        .gallery-img.photo7{
+            background-image: url("images/full-img7.jpg")
+        }
+        .gallery-img.photo8{
+            background-image: url("images/full-img8.jpg")
+        }
+        .gallery-img.photo9{
+            background-image: url("images/full-img9.jpg")
+        }
+        .gallery-img.photo10{
+            background-image: url("images/full-img10.jpg")
+        }
+        .gallery-img.photo11{
+            background-image: url("images/full-img11.jpg")
+        }
+        .gallery-img.photo12{
+            background-image: url("images/full-img12.jpg")
+        }
+        .gallery-img.photo13{
+            background-image: url("images/full-img13.jpg")
+        }
+        .gallery-img.photo14{
+            background-image: url("images/full-img14.jpg")
+        }
+        .gallery-img.photo15{
+            background-image: url("images/full-img15.jpg")
+        }
+        .gallery-img.photo16{
+            background-image: url("images/full-img16.jpg")
+        }
+        .gallery-img.photo17{
+            background-image: url("images/full-img17.jpg")
+        }
+        .gallery-img.photo18{
+            background-image: url("images/full-img18.jpg")
+        }
+        .gallery-img.photo19{
+            background-image: url("images/full-img19.jpg")
+        }
+        .gallery-img.photo20{
+            background-image: url("images/full-img20.jpg")
+        }
+        .gallery-img.photo21{
+            background-image: url("images/full-img21.jpg")
+        }
+        .gallery-img.photo22{
+            background-image: url("images/full-img22.jpg")
+        }
+        .gallery-img.photo23{
+            background-image: url("images/full-img23.jpg")
+        }
+        .gallery-img.photo24{
+            background-image: url("images/full-img24.jpg")
+        }
+        .gallery-img.photo25{
+            background-image: url("images/full-img25.jpg")
+        }
+        .gallery-img.photo26{
+            background-image: url("images/full-img26.jpg")
+        }
+        .gallery-img.photo27{
+            background-image: url("images/full-img27.jpg")
+        }
+        .gallery-img.photo28{
+            background-image: url("images/full-img28.jpg")
+        }
+        .gallery-img.photo29{
+            background-image: url("images/full-img29.jpg")
+        }
+        .gallery-img.photo30{
+            background-image: url("images/full-img30.jpg")
+        }
+        .gallery-img.photo31{
+            background-image: url("images/full-img31.jpg")
+        }
+        .gallery-img.photo32{
+            background-image: url("images/full-img32.jpg")
+        }
+        .gallery-img.photo33{
+            background-image: url("images/full-img33.jpg")
+        }
+        .gallery-img.photo34{
+            background-image: url("images/full-img34.jpg")
+        }
+        .gallery-img.photo35{
+            background-image: url("images/full-img35.jpg")
+        }
+        .gallery-img.photo36{
+            background-image: url("images/full-img36.jpg")
+        }
+        .gallery-img.photo37{
+            background-image: url("images/full-img37.jpg")
+        }
+        .gallery-img.photo38{
+            background-image: url("images/full-img38.jpg")
+        }
+        .gallery-img.photo39{
+            background-image: url("images/full-img39.jpg")
+        }
+        .gallery-img.photo40{
+            background-image: url("images/full-img40.jpg")
+        }
+        .gallery-img.photo41{
+            background-image: url("images/full-img41.jpg")
+        }
+        .gallery-img.photo42{
+            background-image: url("images/full-img42.jpg")
+        }
+        .gallery-img.photo43{
+            background-image: url("images/full-img43.jpg")
+        }
+        .gallery-img.photo44{
+            background-image: url("images/full-img44.jpg")
+        }
+        .gallery-img.photo45{
+            background-image: url("images/full-img45.jpg")
+        }
+        .gallery-img.photo46{
+            background-image: url("images/full-img46.jpg")
+        }
+    }
+@media (min-width: 768px) {
+    .gallery-container {
+        margin: 0 auto;
+        max-width: 1128px;
+        column-width: 360px;
+        column-gap: 16px;
+    }
+    .gallery-img {
+        display: inline-block;
+        margin-bottom: 16px;
+        width: 360px;
+        height: 372px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+    }
+    .gallery-img:nth-child(3n+1) {
+        height: 595px;
+    }
+    .gallery-img:hover {
+        filter: brightness(50%);
+    }
+    
+    .gallery-img.photo1{
+        background-image: url("images/full-img1.jpg")
+    }
+    .gallery-img.photo2{
+        background-image: url("images/full-img2.jpg")
+    }
+    .gallery-img.photo3{
+        background-image: url("images/full-img3.jpg")
+    }
+    .gallery-img.photo4{
+        background-image: url("images/full-img4.jpg")
+    }
+    .gallery-img.photo5{
+        background-image: url("images/full-img5.jpg")
+    }
+    .gallery-img.photo6{
+        background-image: url("images/full-img6.jpg")
+    }
+    .gallery-img.photo7{
+        background-image: url("images/full-img7.jpg")
+    }
+    .gallery-img.photo8{
+        background-image: url("images/full-img8.jpg")
+    }
+    .gallery-img.photo9{
+        background-image: url("images/full-img9.jpg")
+    }
+    .gallery-img.photo10{
+        background-image: url("images/full-img10.jpg")
+    }
+    .gallery-img.photo11{
+        background-image: url("images/full-img11.jpg")
+    }
+    .gallery-img.photo12{
+        background-image: url("images/full-img12.jpg")
+    }
+    .gallery-img.photo13{
+        background-image: url("images/full-img13.jpg")
+    }
+    .gallery-img.photo14{
+        background-image: url("images/full-img14.jpg")
+    }
+    .gallery-img.photo15{
+        background-image: url("images/full-img15.jpg")
+    }
+    .gallery-img.photo16{
+        background-image: url("images/full-img16.jpg")
+    }
+    .gallery-img.photo17{
+        background-image: url("images/full-img17.jpg")
+    }
+    .gallery-img.photo18{
+        background-image: url("images/full-img18.jpg")
+    }
+    .gallery-img.photo19{
+        background-image: url("images/full-img19.jpg")
+    }
+    .gallery-img.photo20{
+        background-image: url("images/full-img20.jpg")
+    }
+    .gallery-img.photo21{
+        background-image: url("images/full-img21.jpg")
+    }
+    .gallery-img.photo22{
+        background-image: url("images/full-img22.jpg")
+    }
+    .gallery-img.photo23{
+        background-image: url("images/full-img23.jpg")
+    }
+    .gallery-img.photo24{
+        background-image: url("images/full-img24.jpg")
+    }
+    .gallery-img.photo25{
+        background-image: url("images/full-img25.jpg")
+    }
+    .gallery-img.photo26{
+        background-image: url("images/full-img26.jpg")
+    }
+    .gallery-img.photo27{
+        background-image: url("images/full-img27.jpg")
+    }
+    .gallery-img.photo28{
+        background-image: url("images/full-img28.jpg")
+    }
+    .gallery-img.photo29{
+        background-image: url("images/full-img29.jpg")
+    }
+    .gallery-img.photo30{
+        background-image: url("images/full-img30.jpg")
+    }
+    .gallery-img.photo31{
+        background-image: url("images/full-img31.jpg")
+    }
+    .gallery-img.photo32{
+        background-image: url("images/full-img32.jpg")
+    }
+    .gallery-img.photo33{
+        background-image: url("images/full-img33.jpg")
+    }
+    .gallery-img.photo34{
+        background-image: url("images/full-img34.jpg")
+    }
+    .gallery-img.photo35{
+        background-image: url("images/full-img35.jpg")
+    }
+    .gallery-img.photo36{
+        background-image: url("images/full-img36.jpg")
+    }
+    .gallery-img.photo37{
+        background-image: url("images/full-img37.jpg")
+    }
+    .gallery-img.photo38{
+        background-image: url("images/full-img38.jpg")
+    }
+    .gallery-img.photo39{
+        background-image: url("images/full-img39.jpg")
+    }
+    .gallery-img.photo40{
+        background-image: url("images/full-img40.jpg")
+    }
+    .gallery-img.photo41{
+        background-image: url("images/full-img41.jpg")
+    }
+    .gallery-img.photo42{
+        background-image: url("images/full-img42.jpg")
+    }
+    .gallery-img.photo43{
+        background-image: url("images/full-img43.jpg")
+    }
+    .gallery-img.photo44{
+        background-image: url("images/full-img44.jpg")
+    }
+    .gallery-img.photo45{
+        background-image: url("images/full-img45.jpg")
+    }
+    .gallery-img.photo46{
+        background-image: url("images/full-img46.jpg")
+    }
+}
+    
+    footer {
+        margin-top: 104px;
+        width: 100vw;
+        background-color: #F6F6F6;
+    }
+    .footer-space-small {
+        height: 40px;
+    }
+    footer hr {
+        display: inline-block;
+        width: 100vw;
+        height: 1px;
+        background-color: var(--general-black);
+        margin: 40px 0;
+    }
+    .footer-text-wrapper {
+        max-width: 1128px;
+        margin: 0 auto;
+        padding-bottom: 76px;
+        opacity: 0.8;
+    }
+    @media (max-width: 1127px) {
+        .footer-text-wrapper {
+            padding: 0 16px 76px;
+        }
+    }
+    .footer-logo {
+        display: inline-block;
+        font-size: 36px;
+        font-weight: 100;
+        margin: 0 24px 16px 0;
+    }
+    .footer-text-wrapper p {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 400;
+    }
+

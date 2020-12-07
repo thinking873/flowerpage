@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>물들임</title>
+    <link rel="stylesheet" href="./flowers-sence-menu.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script>
+        $(function() {
+            $(".ham-btn").click(function(){
+                $("nav").slideToggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <div class="mobile-header">
+                <a class="logo" href="index.html">물들임</a>
+                <button type="button" class="ham-btn">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="hamburger-btn">
+                        <path class="hamburger" d="M6 10H30M6 18H30M6 26H30" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="flowers-color-menu.html">Flowers</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>    
+        </div>
+</header>
+        <!-- hero-section -->
+    <section class="hero">
+            <div class="text-wrapper-lg">
+                <h1 class="heading-text">
+                    Category
+                </h1>
+                <p>
+                    다양한 꽃에 관한 정보를 경험해보세요.
+                </p>
+            </div>
+    </section>
+    <section class="section-catagory-menu">
+        <div class="container-catagory-menu">
+            <a href="flowers-color-menu.html" class="catagory-menu unselect-menu">
+                COLOR
+            </a>
+            <a href="flowers-sence-menu.html" class="catagory-menu select-menu">
+                SENSE
+            </a>
+            <div class="notice"></div>
+        </div>
+        <div class="divide-line"></div>
+    </section>
+    <section class="section-catagory-items">
+        <div class="title-wrapper">
+            <h2>우정</h2>
+            <hr>
+        </div>
+            <div class="flower-card-wrapper">
+                <!--firt flower -->       
+                <a href="narcissus.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img1.png" alt="">
+                    </div>
+                    <h2>
+                        수선화
+                    </h2>
+                    <div class="sub-sub-btn" href="narcissus.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="dandelion.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img2.png" alt="">
+                    </div>
+                    <h2>
+                        민들레
+                    </h2>
+                    <div class="sub-sub-btn" href="dandelion.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="foxglove.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img3.png" alt="">
+                    </div>
+                    <h2>
+                        디키탈리스
+                    </h2>
+                    <div class="sub-sub-btn" href="foxglove.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="freesia.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img4.png" alt="">
+                    </div>
+                    <h2>
+                        프리지어
+                    </h2>
+                    <div class="sub-sub-btn" href="freesia.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="althaea.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img5.png" alt="">
+                    </div>
+                    <h2>
+                        접시꽃
+                    </h2>
+                    <div class="sub-sub-btn" href="althaea.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="hyacinth.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img6.png" alt="">
+                    </div>
+                    <h2>
+                        히아신스
+                    </h2>
+                    <div class="sub-sub-btn" href="hyacinth.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="lavender.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img7.png" alt="">
+                    </div>
+                    <h2>
+                        라벤더
+                    </h2>
+                    <div class="sub-sub-btn" href="lavender.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="marigold.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img8.png" alt="">
+                    </div>
+                    <h2>
+                        메리골드
+                    </h2>
+                    <div class="sub-sub-btn" href="marigold.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="nasturtium.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img9.png" alt="">
+                    </div>
+                    <h2>
+                        한련
+                    </h2>
+                    <div class="sub-sub-btn" href="nasturtium.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="peony.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img10.png" alt="">
+                    </div>
+                    <h2>
+                        모란
+                    </h2>
+                    <div class="sub-sub-btn" href="peony.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="poppy.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img11.png" alt="">
+                    </div>
+                    <h2>
+                        양귀비
+                    </h2>
+                    <div class="sub-sub-btn" href="poppy.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="sunflower.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img12.png" alt="">
+                    </div>
+                    <h2>
+                        해바라기
+                    </h2>
+                    <div class="sub-sub-btn" href="sunflower.html">
+                        View
+                    </div>
+                </a><!--
+             --><!-- <a href="#" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory-item-img8.png" alt="">
+                    </div>
+                    <h2>
+                        스위티피
+                    </h2>
+                    <div class="sub-sub-btn" href="#">
+                        View
+                    </div>
+                </a> --><!--
+             --><!-- <a href="#" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img13.png" alt="">
+                    </div>
+                    <h2>
+                        백일홍
+                    </h2>
+                    <div class="sub-sub-btn" href="#">
+                        View
+                    </div>
+                </a> --><!--
+             -->
+            </div>
+    </section>
+    <section class="section-catagory-items">
+        <div class="title-wrapper">
+            <h2>구애</h2>
+            <hr>
+        </div>
+            <div class="flower-card-wrapper">
+                <!--firt flower -->       
+                <a href="anemone.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img14.png" alt="">
+                    </div>
+                    <h2>
+                        아네모네
+                    </h2>
+                    <div class="sub-sub-btn" href="anemone.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="azalea.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img15.png" alt="">
+                    </div>
+                    <h2>
+                        진달래
+                    </h2>
+                    <div class="sub-sub-btn" href="azalea.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="buttercup.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img16.png" alt="">
+                    </div>
+                    <h2>
+                        미나리아재비
+                    </h2>
+                    <div class="sub-sub-btn" href="buttercup.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="Camellia.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img17.png" alt="">
+                    </div>
+                    <h2>
+                        동백꽃
+                    </h2>
+                    <div class="sub-sub-btn" href="Camellia.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="clover.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img18.png" alt="">
+                    </div>
+                    <h2>
+                        클로버
+                    </h2>
+                    <div class="sub-sub-btn" href="clover.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="gardenia.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img19.png" alt="">
+                    </div>
+                    <h2>
+                        치자꽃
+                    </h2>
+                    <div class="sub-sub-btn" href="gardenia.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="geranium.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img20.png" alt="">
+                    </div>
+                    <h2>
+                        제라늄
+                    </h2>
+                    <div class="sub-sub-btn" href="geranium.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="gladiolous.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img21.png" alt="">
+                    </div>
+                    <h2>
+                        글라디올러스
+                    </h2>
+                    <div class="sub-sub-btn" href="gladiolous.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="mistletoe.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img22.png" alt="">
+                    </div>
+                    <h2>
+                        겨우살이
+                    </h2>
+                    <div class="sub-sub-btn" href="mistletoe.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="pansy.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img23.png" alt="">
+                    </div>
+                    <h2>
+                        팬지
+                    </h2>
+                    <div class="sub-sub-btn" href="pansy.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="primrose.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img24.png" alt="">
+                    </div>
+                    <h2>
+                        앵초
+                    </h2>
+                    <div class="sub-sub-btn" href="primrose.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="snapdragon.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img25.png" alt="">
+                    </div>
+                    <h2>
+                        금어초
+                    </h2>
+                    <div class="sub-sub-btn" href="snapdragon.html">
+                        View
+                    </div>
+                </a><!--
+             -->
+            </div>
+    </section>
+    <section class="section-catagory-items">
+        <div class="title-wrapper">
+            <h2>사랑과 애정</h2>
+            <hr>
+        </div>
+            <div class="flower-card-wrapper">
+                <!--firt flower -->       
+                <a href="bluebell.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img26.png" alt="">
+                    </div>
+                    <h2>
+                        블루벨
+                    </h2>
+                    <div class="sub-sub-btn" href="bluebell.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="carnation.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img27.png" alt="">
+                    </div>
+                    <h2>
+                        카네이션
+                    </h2>
+                    <div class="sub-sub-btn" href="carnation.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="chrysanthemum.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img28.png" alt="">
+                    </div>
+                    <h2>
+                        국화
+                    </h2>
+                    <div class="sub-sub-btn" href="chrysanthemum.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="crocus.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img29.png" alt="">
+                    </div>
+                    <h2>
+                        크로커스
+                    </h2>
+                    <div class="sub-sub-btn" href="crocus.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="dahlia.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img30.png" alt="">
+                    </div>
+                    <h2>
+                        달리아
+                    </h2>
+                    <div class="sub-sub-btn" href="dahlia.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="forget-me-not.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img31.png" alt="">
+                    </div>
+                    <h2>
+                        물망초
+                    </h2>
+                    <div class="sub-sub-btn" href="forget-me-not.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="heliotrope.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img32.png" alt="">
+                    </div>
+                    <h2>
+                        헬리오트로프
+                    </h2>
+                    <div class="sub-sub-btn" href="heliotrope.html">
+                        View
+                    </div>
+                </a><!--
+             --><!-- <a href="#" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory-item-img8.png" alt="">
+                    </div>
+                    <h2>
+                        인동
+                    </h2>
+                    <div class="sub-sub-btn" href="#">
+                        View
+                    </div>
+                </a> --><!--
+             --><a href="lilac.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img33.png" alt="">
+                    </div>
+                    <h2>
+                        라일락
+                    </h2>
+                    <div class="sub-sub-btn" href="lilac.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="lily-of-the-valley.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img34.png" alt="">
+                    </div>
+                    <h2>
+                        은방울꽃
+                    </h2>
+                    <div class="sub-sub-btn" href="lily-of-the-valley.html">
+                        View
+                    </div>
+                </a><!--
+             --><!-- <a href="#" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory-item-img8.png" alt="">
+                    </div>
+                    <h2>
+                        오렌지꽃
+                    </h2>
+                    <div class="sub-sub-btn" href="#">
+                        View
+                    </div>
+                </a> --><!--
+             --><a href="rose.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img35.png" alt="">
+                    </div>
+                    <h2>
+                        장미
+                    </h2>
+                    <div class="sub-sub-btn" href="rose.html">
+                        View
+                    </div>
+                </a><!--
+             --><!-- <a href="#" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img1.png" alt="">
+                    </div>
+                    <h2>
+                        스테파노티스
+                    </h2>
+                    <div class="sub-sub-btn" href="#">
+                        View
+                    </div>
+                </a> --><!--
+             --><a href="tulips.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img36.png" alt="">
+                    </div>
+                    <h2>
+                        튤립
+                    </h2>
+                    <div class="sub-sub-btn" href="tulips.html">
+                        View
+                    </div>
+                </a><!--
+             -->
+            </div>
+    </section>
+    <section class="section-catagory-items">
+        <div class="title-wrapper">
+            <h2>아름다움</h2>
+            <hr>
+        </div>
+            <div class="flower-card-wrapper">
+                <!--firt flower -->       
+                <a href="amaryllis.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img37.png" alt="">
+                    </div>
+                    <h2>
+                        아마릴리스
+                    </h2>
+                    <div class="sub-sub-btn" href="amaryllis.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="CherryBlossom.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img38.png" alt="">
+                    </div>
+                    <h2>
+                        벚꽃
+                    </h2>
+                    <div class="sub-sub-btn" href="CherryBlossom.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="daisy.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img39.png" alt="">
+                    </div>
+                    <h2>
+                        데이지
+                    </h2>
+                    <div class="sub-sub-btn" href="daisy.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="iris.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img40.png" alt="">
+                    </div>
+                    <h2>
+                        붓꽃
+                    </h2>
+                    <div class="sub-sub-btn" href="iris.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="Jasmine.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img41.png" alt="">
+                    </div>
+                    <h2>
+                        재스민
+                    </h2>
+                    <div class="sub-sub-btn" href="Jasmine.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="lily.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img42.png" alt="">
+                    </div>
+                    <h2>
+                        백합
+                    </h2>
+                    <div class="sub-sub-btn" href="lily.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="orchid.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img43.png" alt="">
+                    </div>
+                    <h2>
+                        난초
+                    </h2>
+                    <div class="sub-sub-btn" href="orchid.html">
+                        View
+                    </div>
+                </a><!--
+             --><a href="snowdrop.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img44.png" alt="">
+                    </div>
+                    <h2>
+                        스노드롭
+                    </h2>
+                    <div class="sub-sub-btn" href="snowdrop.html">
+                        View
+                    </div>
+                </a><!--
+             --><!-- <a href="#" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory-item-img8.png" alt="">
+                    </div>
+                    <h2>
+                        제비꽃
+                    </h2>
+                    <div class="sub-sub-btn" href="#">
+                        View
+                    </div>
+                </a> --><!--
+             --><a href="water-lily.html" class="flower-card">
+                    <div class="flower-img">
+                        <img src="images/catagory/catagory-item-img45.png" alt="">
+                    </div>
+                    <h2>
+                        수련
+                    </h2>
+                    <div class="sub-sub-btn" href="water-lily.html">
+                        View
+                    </div>
+                </a><!--
+            
+             -->
+            </div>
+    </section>
+    
+    <footer>
+        <hr>
+        
+        <div class="footer-text-wrapper">
+            <div class="footer-logo">
+                물들임
+            </div>
+            <p>대표: 국대한/최수현/홍유석 <br>
+                COPYRIGHTⓒKoreaPolytechnicUniversityAll. rights reserved.  
+             </p>
+        </div>
+    </footer>   
+    
+    <script type="text/javascript">
+(function(w, d, a){
+    w.__beusablerumclient__ = {
+        load : function(src){
+            var b = d.createElement("script");
+            b.src = src; b.async=true; b.type = "text/javascript";
+            d.getElementsByTagName("head")[0].appendChild(b);
+        }
+    };w.__beusablerumclient__.load(a);
+})(window, document, "//rum.beusable.net/script/b201119e145556u468/49546a36bf");
+</script>
+
+</body>
+</html>

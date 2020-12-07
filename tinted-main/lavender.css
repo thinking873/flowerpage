@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    * { font-family: 'Roboto', sans-serif; }
+    :root {
+        --main-color: #F7CD37;
+        --emphasis-color: #4CCC90;
+        --general-black: #303030;
+        --emphasis-hover-color: rgba(26, 255, 0, 0.3);
+        --emphasis-pressed-color: #00703B;
+        --black-nav: #1f1f1f9d;
+        --gray-color: #ddd;
+    }
+    a {
+        color: var(--white-color);
+        text-decoration: none;
+    }
+    header {
+        width: 100vw;
+        background-color: var(--black-nav);
+        position: absolute;
+        z-index: 2;
+    }
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1128px;
+        margin: 0 auto;
+    }
+    .logo {
+        font-size: 35px;
+        line-height: 84px;
+        font-weight: 100;
+        color: white;
+    }
+    nav {
+        display: block;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+    nav a {
+        display: inline-block;
+        margin: 0 16px;
+        padding: 16px;
+        font-size: 18px;
+        color: white;
+    }
+    nav a:hover {
+        color: var(--main-color);
+        background-color: rgba(0,0,0,0.4);
+    }
+    .ham-btn {
+        display: none;
+    }
+    @media (min-width: 768px) {
+        nav ul {
+            display: flex;
+            /* justify-content: space-between;
+            align-items: center;
+            list-style: none; */
+        }
+    }
+    @media (max-width: 767px) {
+        header .mobile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 12px;
+        }
+        .nav-wrapper {
+            display: block;
+            background-color: var(--black-nav);
+        }
+        nav {
+            display: none;
+        }
+        nav ul {
+            display: block;
+        }
+        nav ul a {
+            display: block;
+        }
+        .ham-btn {
+            display: inline-block;
+            font-size: 20px;
+            background: none;
+            outline: none;
+            border: none;
+        }
+        .ham-btn:hover {
+            opacity: 0.3;
+        }
+        .hamburger {
+            stroke: var(--emphasis-color);
+            width: 36px;
+            height: 36px;
+        }
+    }
+    .hero {
+        width: 100vw;
+        height: 300px;
+        background-image: url("images/explain-background.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .section-main-title {
+        margin-top: 120px;
+        margin-bottom: 64px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .section-main-title span {
+        display: inline-block;
+        background-color: rgb(150,150,255);
+        color: white;
+        font-size: 22px;
+        margin-bottom: 32px;
+        width: 168px;
+        height: 40px;
+    }
+
+    .section-main-title h1 {
+        font-size: 40px;
+        font-weight: bold;
+        color: var(--general-black);
+        white-space: pre;
+    }
+    .section-explain-card {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0 auto;
+        padding-right: 48px;
+        max-width: 1128px;
+        height: 400px;
+        background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url("images/lavender4.jpg");
+        background-size: cover;
+        background-position: center; 
+        text-align: right;
+        border-radius: 12px;
+    }
+    @media (max-width: 768px) {
+        .section-explain-card {
+            margin: 0 12px;
+        }
+    }
+    @media (max-width: 767px) {
+        .section-explain-card {
+            background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url("images/lavender4.jpg");
+        }
+        
+    }
+    .container-explain-card {
+        display: inline-block;
+    }
+    .container-explain-card span {
+        font-size: 24px;
+        font-weight: bold;
+        color: rgba(53,53,53,0.6);
+    }
+    .container-explain-card h2 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: var(--general-black);
+    }
+    .container-explain-card p {
+        font-size: 18px;
+        color: rgb(150,150,255);
+        margin-bottom: 64px;
+    }
+    .explain-small-text p {
+        display: inline-block;
+        color: var(--general-black);
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .explain-small-text p:not(:last-child) {
+        margin-right: 32px;
+    }
+
+
+    .section-long-text {
+        margin: 120px 0;
+    }
+    .container-long-text {
+        margin: 0 auto;
+        padding: 0 12px;
+        max-width: 1128px;
+        color: var(--general-black);
+        text-align: center;
+    }
+    .container-long-text h2 {
+        margin-bottom: 120px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .container-long-text p {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: left;
+        margin-bottom: 48px;
+    }
+    .section-img-card {
+        margin-bottom: 240px;
+    }
+    .container-img-card {
+        margin: 0 auto;
+        padding: 0 12px;
+        max-width: 1704px;
+    }
+    .container-img-card h1 {
+        margin-bottom: 72px;
+        font-size: 36px;
+        text-align: center;
+    }
+    .card-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card {
+        display: inline-block;
+        margin: 0 12px;
+        width: 552px;
+        height: 446px;
+        background-position: center;
+        background-size: cover;
+        flex: 1 1 auto;
+    }
+    /* 대표 이미지 넣는 곳 */
+    .first {
+        background-image: url("images/lavender1.jpg");
+    }
+    .second {
+        background-image: url("images/lavender2.jpg");
+    }
+    .third {
+        background-image: url("images/lavender3.jpg");
+    }
+    @media (max-width: 767px) {
+        .card-wrapper {
+            display: block;
+            text-align: center;
+        }
+        .card {
+            width: 300px;
+            height: 250px;
+            margin-bottom: 24px;
+        }
+    }
+    
+
+    footer {
+        margin-top: 104px;
+        width: 100vw;
+        background-color: #F6F6F6;
+    }
+    .footer-space-small {
+        height: 40px;
+    }
+    footer hr {
+        display: inline-block;
+        width: 100vw;
+        height: 1px;
+        background-color: var(--general-black);
+        margin: 40px 0;
+    }
+    .footer-text-wrapper {
+        max-width: 1128px;
+        margin: 0 auto;
+        padding-bottom: 76px;
+        opacity: 0.8;
+    }
+    @media (max-width: 1127px) {
+        .footer-text-wrapper {
+            padding: 0 16px 76px;
+        }
+    }
+    .footer-logo {
+        display: inline-block;
+        font-size: 36px;
+        font-weight: 100;
+        margin: 0 24px 16px 0;
+    }
+    .footer-text-wrapper p {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 400;
+    }
